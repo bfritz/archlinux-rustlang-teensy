@@ -32,4 +32,14 @@ Recipe for Arch Linux x86_64 Vagrant box to build [zinc.rs](http://zinc.rs/) wit
   vagrant up
   ```
 
-* FIXME: Load `blink.hex` onto the Teensy.
+  ```
+  # after `vagrant up` finish
+  ls -l blink.hex
+  ```
+
+* Load `blink.hex` onto the Teensy:
+
+  ```sh
+  ./teensy-loader-cli --mcu=mk20dx256 -w blink.hex
+  # press reset button on Teensy now
+  ```

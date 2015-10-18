@@ -1,1 +1,3 @@
 .vagrant/
+teensy-loader-cli
+blink.hex

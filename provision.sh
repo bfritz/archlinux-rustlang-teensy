@@ -6,3 +6,5 @@ pacman -S --noconfirm --needed \
   avr-gcc avr-binutils avr-libc avrdude
 
 su - vagrant -c '/bin/sh /vagrant/zinc.sh'
+
+cp -p /usr/bin/teensy-loader-cli /vagrant/

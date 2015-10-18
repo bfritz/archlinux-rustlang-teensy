@@ -55,4 +55,4 @@ file $OUT
 arm-none-eabi-objcopy -Oihex -R .eeprom -R .fuse -R .lock -R .signature $OUT blink.hex
 cp -p blink.hex /vagrant/
 
-echo "Install with: /opt/arduino-1.6.5-r5/hardware/tools/teensy \$VAGRANT_DIR/blink.hex"
+echo "Install with: ./teensy-loader-cli --mcu=mk20dx256 -w blink.hex"
