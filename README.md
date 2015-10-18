@@ -43,3 +43,11 @@ Recipe for Arch Linux x86_64 Vagrant box to build [zinc.rs](http://zinc.rs/) wit
   ./teensy-loader-cli --mcu=mk20dx256 -w blink.hex
   # press reset button on Teensy now
   ```
+
+### Disclaimer:
+
+In case it's not already clear, I have no idea what I am doing.  The
+work in this repo is the result of lots of copy-and-paste, educated
+guesses, and trial-and-error.  Just looking at this code is likely
+to make your Teensy burst into flames and burn down anything nearby.
+You've been warned.
