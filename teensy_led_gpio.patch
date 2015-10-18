@@ -1,0 +1,13 @@
+diff --git a/examples/blink_k20/src/main.rs b/examples/blink_k20/src/main.rs
+index 7203b1b..7e40e83 100644
+--- a/examples/blink_k20/src/main.rs
++++ b/examples/blink_k20/src/main.rs
+@@ -32,7 +32,7 @@ pub fn main() {
+   watchdog::init(watchdog::State::Disabled);
+ 
+   // Pins for MC HCK (http://www.mchck.org/)
+-  let led1 = pin::Pin::new(pin::Port::PortB, 16, pin::Function::Gpio, Some(zinc::hal::pin::Out));
++  let led1 = pin::Pin::new(pin::Port::PortC, 5, pin::Function::Gpio, Some(zinc::hal::pin::Out));
+ 
+   systick::setup(systick::ten_ms().unwrap_or(480000));
+   systick::enable();

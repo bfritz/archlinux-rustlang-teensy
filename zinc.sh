@@ -45,6 +45,7 @@ export PATH=$PATH:/usr/share/arduino/hardware/tools/arm/bin
 rustc --version
 cargo --version
 
+patch -p1 < /vagrant/teensy_led_gpio.patch
 ./support/build-jenkins.sh
 
 OUT=examples/blink_k20/target/thumbv7em-none-eabi/release/blink
